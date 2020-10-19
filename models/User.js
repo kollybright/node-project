@@ -14,7 +14,7 @@ const UserSchema = mongoose.Schema({
 
     date:  {
         type: Date,
-        required: ""
+        required: "Required"
     }
 
 });
