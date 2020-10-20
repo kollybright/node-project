@@ -12,7 +12,7 @@ const db = require('./models/index')
 
 const bodyParser = require('body-parser');
 
-
+const cors = require('cors');
 
 
 const app = express();
@@ -40,6 +40,7 @@ app.use((req, res, next) => {
 
 
 
+app.use(cors());
 
 app.use('/', routes);
 
